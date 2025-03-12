@@ -1,7 +1,7 @@
 import { addMovie } from "./movies";
 import { rateMovie } from "./movies";
 import { getAverageRating } from "./movies";
-import { getTopRatedMovies } from "./movies";
+//import { getTopRatedMovies } from "./movies";
 import { getMoviesByGenre } from "./movies";
 import { getMoviesByDirector } from "./movies";
 import { searchMoviesBasedOnKeyword } from "./movies";  
@@ -24,14 +24,14 @@ rateMovie(2, 4);
 
 rateMovie(3, 5);
 rateMovie(3, 5);
-rateMovie(3, 5);
+rateMovie(3, 1);
 
 rateMovie(4, 5);
-rateMovie(4, 5);
+rateMovie(4, 1);
 rateMovie(4, 5);
 
 rateMovie(5, 5);
-rateMovie(5, 5);
+rateMovie(5, 2);
 rateMovie(5, 5);
 
 
@@ -41,7 +41,7 @@ console.log(getAverageRating(3)); // 5
 console.log(getAverageRating(4)); // 5  
 console.log(getAverageRating(5)); // 5
 
-console.log(getTopRatedMovies());
+//console.log(getTopRatedMovies());
 
 console.log(getMoviesByGenre("Crime"));
 console.log(getMoviesByDirector("Christopher Nolan"));
@@ -51,4 +51,3 @@ console.log(searchMoviesBasedOnKeyword("the"));
 console.log(getMovie(1));
 console.log(removeMovie(1));
 console.log(getMovie(1));
-
